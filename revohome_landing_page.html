@@ -24,9 +24,8 @@
 
     #home{
       background-color: #0070C0;
-      
       max-height: 100%;
-      max-width: 100%;
+      width: 100%;
       padding-bottom: 50px;
     }
 
@@ -46,7 +45,7 @@
     }
 
     #topRow h1{
-      font-style:  white;
+      font-style: white;
       font-size: 300%;
     }
 
@@ -72,7 +71,8 @@
     }
 
     #download{
-      background-color: #B0D1FB;
+      background-color: #0070C0;
+      color: white;
       padding-top: 70px;
       width: 100%;
     }
@@ -115,6 +115,7 @@
           <li class="active"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#download">Download The App</a></li>
+          <li><a href="">Installation</a></li>
         </ul>
         <form class="navbar-form navbar-right">
           <div class="form-group">
@@ -151,30 +152,20 @@
       <h1 class="center title">REVO HOME</h1>
       <p class="lead center">Intelligent Fireplace Controls</p>
     </div>
-  
 
     <div class="row marginBottom">
-
       <div class="col-md-4 marginTop">
         <h2><span class="glyphicon glyphicon-triangle-right"></span>Control your fireplace with  your iOS device</h2>
         <p>Your fireplace will be connected to your Wi-Fi network. Adjust your flame, fan, light, and auxiliary devices with your iOS device.</p>
 
         <img class="iPhoneScreenShot center" src="images/revo_control.png">
-<!--
-        <button class="btn btn-success marginTop">Sign Up!</button>
---> 
       </div><!--col-md-4-->
-
-
 
       <div class="col-md-4 marginTop">
         <h2><span class="glyphicon glyphicon-triangle-right"></span>Are you one of those guys with multiple fireplaces?</h2>
         <p> With the REVO HOME system you can control all of them with a single iPhone!</p>
 
         <img class="iPhoneScreenShot center" src="images/revo_devices.png">
-        <!--
-        <button class="btn btn-success marginTop">Sign Up!</button> 
-      -->
       </div><!--col-md-4-->
 
       <div class="col-md-4 marginTop">
@@ -187,9 +178,13 @@
           <li>Wiring Harnesses & Mounting Hardware</li>
         </ul>
         <img class="iPhoneScreenShot center" src="images/revo_kit.png">
-        <!--
-        <button class="btn btn-success marginTop">Sign Up!</button>
-        --> 
+      </div><!--col-md-4-->
+
+      <div class="col-md-4 marginTop">
+        <h2><span class="glyphicon glyphicon-triangle-right"></span>Want Flexibility?</h2>
+        <p>The REVO HOME system also include Dexen's RFC remote so you can have a second remote option. Multiple iOS devices can be used with REVO HOME.</p>
+
+        <img class="iPhoneScreenShot center" src="images/revohome_w_rfc.png">
       </div><!--col-md-4-->
 
     </div><!--row-->
@@ -204,10 +199,10 @@
 
       <p class="center"><img src="images/revo_app_icon.png"></p>
 
-      <p class="center"><img src="images/app_store_icon.png" class="appStoreImage"/>
+      <p class="center">
+        <img src="images/app_store_icon.png" class="appStoreImage"/>
     </div>
   </div>
-  
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -217,6 +212,8 @@
 
   <script>
     $(".contentContainer").css("min-height", $(window).height());
+
+    $("#revoHomeImage").css("max-width", $(window).width());
   </script> 
 
 </body>
