@@ -112,10 +112,10 @@
 
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#download">Download The App</a></li>
-          <li><a href="revohome_installation_page.html">Installation</a></li>
+          <li class="active"><a href="revohome_installation.html">Installation</a></li>
         </ul>
         <form class="navbar-form navbar-right">
           <div class="form-group">
@@ -131,39 +131,32 @@
     </div><!--container-->
   </div><!--navbar navbar-default-->
 
-  <div class="container contentContainer" id="home">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3" id="topRow">
-        <h1 class="marginTop" id="whiteText">Revo Home</h1>
-
-        <p class="lead" id="whiteText">Control your fireplace with your iOS devices & Dexen's RFC Remote</p>
-
-        <p id="whiteText"> Scroll down for more information </p>
-
-        <image id="#revoHomeImage" src="images/revo_home_background.png" />
-
-      </div>
-    </div>
-  </div>
-
   <div class="container contentContainer" id="about">
 
     <div class="row" class="center">
       <h1 class="center title">REVO HOME</h1>
-      <p class="lead center">Intelligent Fireplace Controls</p>
+      <p class="lead center">Installation Instructions</p>
     </div>
 
     <div class="row marginBottom">
       <div class="col-md-4 marginTop">
-        <h2><span class="glyphicon glyphicon-triangle-right"></span>Control your fireplace with  your iOS device</h2>
-        <p>Your fireplace will be connected to your Wi-Fi network. Adjust your flame height, fan speed, lighting, and auxiliary burners/devices with your iOS device.</p>
+        <h2><span class="glyphicon glyphicon-triangle-right"></span>Kit Contents</h2>
+        <p>The REVO HOME Kit includes the following</p>
 
-        <img class="iPhoneScreenShot center" src="images/revo_control.png">
+        <ul>
+          <li>9K-Module</li>
+          <li>Wi-Fi Receiver</li>
+          <li>RFC Remote</li>
+          <li>Wiring Harnesses & Mounting Hardware</li>
+        </ul>
+        
+        <img class="iPhoneScreenShot center" src="images/revo_kit.png">
       </div><!--col-md-4-->
 
       <div class="col-md-4 marginTop">
-        <h2><span class="glyphicon glyphicon-triangle-right"></span>Are you one of those guys with multiple fireplaces?</h2>
-        <p> With the REVO HOME system you can control all of them with a single iPhone!</p>
+        <h2><span class="glyphicon glyphicon-triangle-right"></span>Plug-In REVO HOME Wi-Fi Receiver</h2>
+
+        <p>Plug the REVO Home Wi-Fi Receiver into a wall socket in a location with a strong Wi-Fi signal and a strong signal to the Fireplace. You can test the signal integrity by standing where you plan on installing the REVO HOME Wi-Fi receiver and testing the fireplace with the RFC remote.</p>
 
         <img class="iPhoneScreenShot center" src="images/revo_devices.png">
       </div><!--col-md-4-->
@@ -213,7 +206,7 @@
   <script>
     $(".contentContainer").css("min-height", $(window).height());
 
-    $("#revoHomeImage").css("width", $(window).width());
+    $("#revoHomeImage").css("min-width", $(window).width());
   </script> 
 
 </body>
